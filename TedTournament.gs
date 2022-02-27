@@ -1,6 +1,8 @@
 function TedTournament(league, year, round, game, colNumber) {
   var key = "1DyuuT9zPSh9RdzrAF_1bY6HhyuYKckL3E6wr-sGKZTs"
-  var sheetMap = {"Women 2021 Tournament Data": 100993931,
+  var sheetMap = {"Women 2022 Tournament Data": 289728400,
+                  "Men 2022 Tournament Data": 309823818,
+                  "Women 2021 Tournament Data": 100993931,
                   "Men 2021 Tournament Data": 1977203751,
                   "Women 2020 Tournament Data": 945214705,
                   "Men 2020 Tournament Data": 1120860517,
