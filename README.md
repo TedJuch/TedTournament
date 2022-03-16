@@ -7,7 +7,7 @@ TedTournament() is a custom function for Google Sheets which returns data for Ma
 1. Open the spreadsheet with which you would like to use this function
 2. Go to Extensions > App Script
 3. Choose Blank Project
-4. Copy and paste the code below into the body of the code overwriting anything there.
+4. Copy and paste the code in [TedTournament.gs](TedTournament.gs) into the body of the code overwriting anything there.
 5. Name the script TedTournament
 6. Click Save
 7. Close the Script Editor
