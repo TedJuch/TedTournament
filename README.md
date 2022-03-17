@@ -54,9 +54,13 @@ Now you can type =TedTournament(...) with your parameters in your spreadsheet an
     * If the game is over it will show one of the following:
       * FINAL
       * FINAL (OT)
+      * FINAL (2OT)
   * 13 - gameID: This is a unique id for the game
   * 14 - Top Team Seed : This is the seed for the top team of the game
   * 15 - Bottom Team Seed : This is the seed for the bottom team of the game
+  * 16 - Start Date : This is the date of the game
+  * 17 - Start Time : This is the time the game starts in Eastern Time (ET)
+  * 18 - Network : This is the television network the game is on
 
 ## Notes
 
