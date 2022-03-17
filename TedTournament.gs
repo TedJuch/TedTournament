@@ -1,3 +1,20 @@
+/*====================================================================================================================================*
+  TedTournament by Ted Juch and Adam Lusk
+ *====================================================================================================================================*
+  Version:      2.3.0
+  Project Page: https://github.com/TedJuch/TedTournament
+  License:      GNU General Public License, version 3 (GPL-3.0) 
+                http://www.opensource.org/licenses/gpl-3.0.html
+  ------------------------------------------------------------------------------------------------------------------------------------
+  Change Log:
+  
+  2.3.0   Added new attributes: Start Date, Start Time (in ET), and Network to break apart the Game Bracket information
+  2.2.0   Updated README for Game Status to reflect new game status mappings
+  2.1.1   Bugfix for game data lookup
+  2.0.0   Added support for FIRST FOUR (play-in games), remapped 2018, 2019, 2020, 2021 sheet maps, removed support for future years
+  1.0.0   Initial release
+ *====================================================================================================================================*/
+
 function TedTournament(league, year, round, game, colNumber) {
   var key = "1DyuuT9zPSh9RdzrAF_1bY6HhyuYKckL3E6wr-sGKZTs"
   var sheetMap = {"Women 2022 Tournament Data": 289728400,
@@ -19,7 +36,7 @@ function TedTournament(league, year, round, game, colNumber) {
                   "Women 2014 Tournament Data": 856902930,
                   "Men 2014 Tournament Data": 855551724};
   var sheetName = league + " " + year + " Tournament Data";
-  var gameData = getValuesPublic(key, sheetMap[sheetName], "A1:R68");
+  var gameData = getValuesPublic(key, sheetMap[sheetName], "A1:U68");
  
   for (var i = 0; i < gameData.length; i++)
     if (gameData[i][1] == round && gameData[i][2] == game)
