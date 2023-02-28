@@ -1,13 +1,14 @@
 /*====================================================================================================================================*
   TedTournament by Ted Juch and Adam Lusk
  *====================================================================================================================================*
-  Version:      2.3.0
+  Version:      2.4.0
   Project Page: https://github.com/TedJuch/TedTournament
   License:      GNU General Public License, version 3 (GPL-3.0) 
                 http://www.opensource.org/licenses/gpl-3.0.html
   ------------------------------------------------------------------------------------------------------------------------------------
   Change Log:
   
+  2.4.0   Added support for the 2023 tournament
   2.3.0   Added new attributes: Start Date, Start Time (in ET), and Network to break apart the Game Bracket information
   2.2.0   Updated README for Game Status to reflect new game status mappings
   2.1.1   Bugfix for game data lookup
@@ -17,7 +18,9 @@
 
 function TedTournament(league, year, round, game, colNumber) {
   var key = "1DyuuT9zPSh9RdzrAF_1bY6HhyuYKckL3E6wr-sGKZTs"
-  var sheetMap = {"Women 2022 Tournament Data": 289728400,
+  var sheetMap = {"Women 2023 Tournament Data": 50550597,
+                  "Men 2023 Tournament Data": 1608514680,
+                  "Women 2022 Tournament Data": 289728400,
                   "Men 2022 Tournament Data": 309823818,
                   "Women 2021 Tournament Data": 100993931,
                   "Men 2021 Tournament Data": 1977203751,
