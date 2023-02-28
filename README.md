@@ -1,6 +1,6 @@
 # TedTournament()
 
-TedTournament() is a custom function for Google Sheets which returns data for March Madness (NCAA Division I Basketball Championship) games. Currently, this function supports data for 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022 for men's and women's tournaments. Data is provided in near-real-time through manual entry.
+TedTournament() is a custom function for Google Sheets which returns data for March Madness (NCAA Division I Basketball Championship) games. Currently, this function supports data for 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023 for men's and women's tournaments. Data is provided in near-real-time through manual entry.
 
 ## Installation
 
