@@ -61,6 +61,7 @@ Now you can type =TedTournament(...) with your parameters in your spreadsheet an
   * 16 - Start Date : This is the date of the game
   * 17 - Start Time : This is the time the game starts in Eastern Time (ET)
   * 18 - Network : This is the television network the game is on
+  * 19 - Game Region : This is the region the game is played in. If a game doesn't have a region the value will be NoRegion
 
 ## Notes
 
