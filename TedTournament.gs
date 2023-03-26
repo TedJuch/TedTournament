@@ -1,13 +1,14 @@
 /*====================================================================================================================================*
   TedTournament by Ted Juch and Adam Lusk
  *====================================================================================================================================*
-  Version:      2.4.1
+  Version:      2.4.2
   Project Page: https://github.com/TedJuch/TedTournament
   License:      GNU General Public License, version 3 (GPL-3.0) 
                 http://www.opensource.org/licenses/gpl-3.0.html
   ------------------------------------------------------------------------------------------------------------------------------------
   Change Log:
   
+  2.4.2   Added new attributes: Top Team Char6, Bottom Team Char6, Winning Team Char6, Losing Team Char6
   2.4.1   Added new attributes: Game Region
   2.4.0   Added support for the 2023 tournament
   2.3.0   Added new attributes: Start Date, Start Time (in ET), and Network to break apart the Game Bracket information
@@ -40,7 +41,7 @@ function TedTournament(league, year, round, game, colNumber) {
                   "Women 2014 Tournament Data": 856902930,
                   "Men 2014 Tournament Data": 855551724};
   var sheetName = league + " " + year + " Tournament Data";
-  var gameData = getValuesPublic(key, sheetMap[sheetName], "A1:V68");
+  var gameData = getValuesPublic(key, sheetMap[sheetName], "A1:Z68");
  
   for (var i = 0; i < gameData.length; i++)
     if (gameData[i][1] == round && gameData[i][2] == game)
