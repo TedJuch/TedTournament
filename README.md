@@ -62,6 +62,10 @@ Now you can type =TedTournament(...) with your parameters in your spreadsheet an
   * 17 - Start Time : This is the time the game starts in Eastern Time (ET)
   * 18 - Network : This is the television network the game is on
   * 19 - Game Region : This is the region the game is played in. If a game doesn't have a region the value will be NoRegion. Regions for Play-in games will include the region the game plays into.
+  * 20 - Top Team Char6 : This is the max 6 character name of the top team of the game
+  * 21 - Bottom Team Char6 : This is the max 6 character name of the bottom team of the game
+  * 22 - Winning Team Char6 : This is the max 6 character name of the winning top team of the game
+  * 23 - Losing Team Char6 : This is the max 6 character name of the losing top team of the game
 
 ## Notes
 
