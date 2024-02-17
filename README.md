@@ -77,3 +77,11 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 
 ## License
 [GPL-3.0](https://choosealicense.com/licenses/gpl-3.0/)
+
+## Google Sheets Templates
+
+I maintain Google Sheets Templates for managing Individual Brackets or a Group of Brackets as a Bracket Manager. The below links will create your own private copy of the files. See the INSTRUCTIONS tab on each sheet for how to use them. You'll get a warning that says "The attached Apps Script file and functionality will also be copied. This is because the TedTournament() function comes pre-installed. To review the script, click on View Apps Script file when making the copy if you are unsure.
+
+[Single Bracket Template](https://docs.google.com/spreadsheets/d/1izjBEQ_FIU0dJ2Z1exWMY2FwpmDP6AqHYxlldD6xhO4/copy) <--clicking on this link will open a new private copy only you have access to. Once the teams for the Tournament are set, pick your winners, sit back, and enjoy the show! The bracket will automatically update with winners and calculate winning scores. You can also use this template in conjunction with the group template below. See the HELP tabs on each template for how to use them together.
+
+[Group Bracket Template](https://docs.google.com/spreadsheets/d/1UBEQnmpWKKHPXu4Y3xmUAlxWR4Oo9jPAXCfL_e-gMT8/copy) <--clicking on this link will open a new private copy only you have access to. Bracket Pool supports up to 100 brackets!
