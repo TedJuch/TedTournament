@@ -1,6 +1,6 @@
 # TedTournament()
 
-TedTournament() is a custom function for Google Sheets which returns data for March Madness (NCAA Division I Basketball Championship) games. Currently, this function supports data for 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024 for men's and women's tournaments. Data is provided in near-real-time through manual entry.
+TedTournament() is a custom function for Google Sheets which returns data for March Madness (NCAA Division I Basketball Championship) games. Currently, this function supports data for 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024 for men's and women's tournaments.
 
 ## Installation
 
@@ -71,6 +71,19 @@ Now you can type =TedTournament(...) with your parameters in your spreadsheet an
 
 * The function parameter must be input as numbers without “”. See Sample Usage.
 * To view the source data go here: [TedTournament() Source Data](https://docs.google.com/spreadsheets/d/1DyuuT9zPSh9RdzrAF_1bY6HhyuYKckL3E6wr-sGKZTs/edit#gid=977457469)
+
+## Pulling Complete Game Data Into a Spreadheet without using TedTournament()
+
+If you're building you're own custom bracket and want to use my data, consider pulling in the entire dataset using the [importrange()](https://support.google.com/docs/answer/3093340?hl=en) Google Sheets function.
+
+In any tab in your own spreadsheet use the following:
+
+```code()
+=importrange("1DyuuT9zPSh9RdzrAF_1bY6HhyuYKckL3E6wr-sGKZTs","Men 2024 Tournament Data!A:Z")
+```
+
+* Be sure you [authorize access](https://support.google.com/docs/answer/3093340?hl=en#zippy=%2Cpermission-access) if you're getting an error.
+* To pull in other years or gender simply change the "Men" to "Women" and the year to a year supported by TedTournament().
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
