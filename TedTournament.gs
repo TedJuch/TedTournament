@@ -1,13 +1,14 @@
 /*====================================================================================================================================*
   TedTournament by Ted Juch and Adam Lusk
  *====================================================================================================================================*
-  Version:      2.5.0
+  Version:      2.6.0
   Project Page: https://github.com/TedJuch/TedTournament
   License:      GNU General Public License, version 3 (GPL-3.0) 
                 http://www.opensource.org/licenses/gpl-3.0.html
   ------------------------------------------------------------------------------------------------------------------------------------
   Change Log:
   
+  2.6.0   Added support for the 2025 tournaments
   2.5.0   Added support for the 2024 tournaments
   2.4.2   Added new attributes: Top Team Char6, Bottom Team Char6, Winning Team Char6, Losing Team Char6
   2.4.1   Added new attributes: Game Region
@@ -21,7 +22,9 @@
 
 function TedTournament(league, year, round, game, colNumber) {
   var key = "1DyuuT9zPSh9RdzrAF_1bY6HhyuYKckL3E6wr-sGKZTs"
-  var sheetMap = {"Women 2024 Tournament Data": 2079808804,
+  var sheetMap = {"Women 2025 Tournament Data": 219886598,
+                  "Men 2025 Tournament Data": 914813182,
+                  "Women 2024 Tournament Data": 2079808804,
                   "Men 2024 Tournament Data": 448317216,
                   "Women 2023 Tournament Data": 50550597,
                   "Men 2023 Tournament Data": 1608514680,
