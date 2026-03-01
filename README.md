@@ -1,6 +1,6 @@
 # TedTournament()
 
-TedTournament() is a custom function for Google Sheets which returns data for March Madness (NCAA Division I Basketball Championship) games. Currently, this function supports data for 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025 for men's and women's tournaments.
+TedTournament() is a custom function for Google Sheets which returns data for March Madness (NCAA Division I Basketball Championship) games. Currently, this function supports data for 2026, 2025, 2024, 2023, 2022, 2021, 2020, 2019, 2018, 2017, 2016, 2015, 2014 for men's and women's tournaments.
 
 ## Installation
 
@@ -79,11 +79,31 @@ If you're building you're own custom bracket and want to use my data, consider p
 In any tab in your own spreadsheet use the following:
 
 ```code()
-=importrange("1DyuuT9zPSh9RdzrAF_1bY6HhyuYKckL3E6wr-sGKZTs","Men 2025 Tournament Data!A:Z")
+=importrange("1DyuuT9zPSh9RdzrAF_1bY6HhyuYKckL3E6wr-sGKZTs","Men 2026 Tournament Data!A:Z")
 ```
 
 * Be sure you [authorize access](https://support.google.com/docs/answer/3093340?hl=en#zippy=%2Cpermission-access) if you're getting an error.
 * To pull in other years or gender simply change the "Men" to "Women" and the year to a year supported by TedTournament().
+
+## Privacy and Usage Tracking
+
+In version 2.7.0, an anonymous usage tracking feature was introduced to tally how many unique spreadsheets are actively using the custom function and the templates during each tournament season.
+
+**Function Usage Tracking:**
+When you use the `=TedTournament()` formula, the script implicitly pings an anonymous usage log with:
+* A randomly generated ID (e.g., `sheet_abc123`)
+* The script version (e.g., `2.7.0`)
+* The requested league
+* The requested year
+
+**Template Usage Tracking:**
+If you use the standalone templates linked below, they also contain an anonymous tracker that logs:
+* A randomly generated ID (e.g., `sheet_abc123`)
+* The template version (e.g., `Template_2026_Initial` or `Template_2026_Active`)
+* The selected league 
+* The selected year
+
+**This feature does not collect or track any personal information (no emails, no names, no bracket selections).**
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
@@ -93,7 +113,11 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 
 ## Google Sheets Templates
 
-I maintain Google Sheets Templates for managing Individual Brackets or a Group of Brackets as a Bracket Manager. The below links will create your own private copy of the files. See the INSTRUCTIONS tab on each sheet for how to use them. You'll get a warning that says "The attached Apps Script file and functionality will also be copied. This is because the TedTournament() function comes pre-installed. To review the script, click on View Apps Script file when making the copy if you are unsure.
+I maintain Google Sheets Templates for managing Individual Brackets or a Group of Brackets as a Bracket Manager. The below links will create your own private copy of the files. **The most up-to-date version of both templates is currently Version 10.**
+
+**Note on Copying:** When you click the links below, Google will show a warning: *"The attached Apps Script file and functionality will also be copied."* **This is completely normal and safe.** It appears because the `TedTournament()` script is pre-installed in the template to support the tournament data functions, and to anonymously track active usage of the template and functions. As detailed in the *Privacy and Usage Tracking* section above, the script only logs a randomly generated ID, the template version, the requested league, and the year. If you'd like to verify this code before copying, you can click "View Apps Script file" right on the copy screen.
+
+**Note on Formulas:** You may also see a yellow bar below the menus that says *"Warning: Some formulas are trying to send and receive data from external parties."* This is a standard Google Sheets security feature that appears whenever a spreadsheet uses `IMPORTRANGE` or `IMPORTDATA` functions to pull in data or communicate with the backend tracking script. You can safely click **Allow access**.
 
 [Single Bracket Template](https://docs.google.com/spreadsheets/d/1izjBEQ_FIU0dJ2Z1exWMY2FwpmDP6AqHYxlldD6xhO4/copy) <--clicking on this link will open a new private copy only you have access to. Once the teams for the Tournament are set, pick your winners, sit back, and enjoy the show! The bracket will automatically update with winners and calculate winning scores. You can also use this template in conjunction with the group template below. See the HELP tabs on each template for how to use them together.
 
