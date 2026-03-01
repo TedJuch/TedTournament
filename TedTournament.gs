@@ -116,6 +116,35 @@ function onInstall(e) {
 }
  
 function onOpen(e) {
+  // Zero-Warning UID Generator for Standalone Templates
+  try {
+    var ss = e.source;
+    if (!ss) return; 
+    
+    // Do not generate UIDs on the Master Templates
+    var masterIds = [
+      "1izjBEQ_FIU0dJ2Z1exWMY2FwpmDP6AqHYxlldD6xhO4", // Single Bracket Master
+      "1UBEQnmpWKKHPXu4Y3xmUAlxWR4Oo9jPAXCfL_e-gMT8"  // Group Bracket Master
+    ];
+    if (masterIds.indexOf(ss.getId()) !== -1) {
+      return; 
+    }
+    
+    var trackingSheet = ss.getSheetByName("Tracking [HIDDEN]");
+    
+    // Attempt to write the ID if the Tracking tab exists
+    if (trackingSheet) {
+      var uidCell = trackingSheet.getRange("A2"); 
+      
+      // Only generate and write an ID if the cell is currently empty
+      if (!uidCell.getValue()) {
+        var randomId = "sheet_" + Math.random().toString(36).substring(2, 12);
+        uidCell.setValue(randomId);
+      }
+    }
+  } catch (err) {
+    // Fail silently
+  }
 }
 
 function trackUsage(league, year) {
@@ -175,26 +204,5 @@ function trackUsage(league, year) {
   } finally {
     // Always release the lock when done
     lock.releaseLock();
-  }
-}
-
-// Zero-Warning UID Generator for Standalone Templates
-function onEdit(e) {
-  try {
-    var ss = e.source;
-    var trackingSheet = ss.getSheetByName("Tracking [HIDDEN]");
-    
-    // Attempt to write the ID if the Tracking tab exists
-    if (trackingSheet) {
-      var uidCell = trackingSheet.getRange("A2"); 
-      
-      // Only generate and write an ID if the cell is currently empty
-      if (!uidCell.getValue()) {
-        var randomId = "sheet_" + Math.random().toString(36).substring(2, 12);
-        uidCell.setValue(randomId);
-      }
-    }
-  } catch (err) {
-    // Fail silently
   }
 }
