@@ -122,3 +122,6 @@ I maintain Google Sheets Templates for managing Individual Brackets or a Group o
 [Single Bracket Template](https://docs.google.com/spreadsheets/d/1izjBEQ_FIU0dJ2Z1exWMY2FwpmDP6AqHYxlldD6xhO4/copy) <--clicking on this link will open a new private copy only you have access to. Once the teams for the Tournament are set, pick your winners, sit back, and enjoy the show! The bracket will automatically update with winners and calculate winning scores. You can also use this template in conjunction with the group template below. See the HELP tabs on each template for how to use them together.
 
 [Group Bracket Template](https://docs.google.com/spreadsheets/d/1UBEQnmpWKKHPXu4Y3xmUAlxWR4Oo9jPAXCfL_e-gMT8/copy) <--clicking on this link will open a new private copy only you have access to. Bracket Pool supports up to 100 brackets!
+
+### Support
+If **TedTournament** saved your bracket pool or made your spreadsheet life easier, feel free to [buy me a tournament snackl](https://venmo.com/code?user_id=2117148897968128612&created=1772685410)!
