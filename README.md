@@ -123,5 +123,5 @@ I maintain Google Sheets Templates for managing Individual Brackets or a Group o
 
 [Group Bracket Template](https://docs.google.com/spreadsheets/d/1UBEQnmpWKKHPXu4Y3xmUAlxWR4Oo9jPAXCfL_e-gMT8/copy) <--clicking on this link will open a new private copy only you have access to. Bracket Pool supports up to 100 brackets!
 
-### Support
-If **TedTournament** saved your bracket pool or made your spreadsheet life easier, feel free to [buy me a tournament snackl](https://venmo.com/code?user_id=2117148897968128612&created=1772685410)!
+## Support
+If **TedTournament** saved your bracket pool or made your spreadsheet life easier, feel free to [buy me a tournament snack](https://venmo.com/code?user_id=2117148897968128612&created=1772685410) or [buy me a tournament drink](https://www.buymeacoffee.com/tedj)!
