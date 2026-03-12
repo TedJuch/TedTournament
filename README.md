@@ -1,4 +1,20 @@
-# TedTournament()
+# TedTournament
+
+TedTournament is a project that provides Google Sheets templates and a custom function for managing March Madness (NCAA Division I Basketball Championship) brackets. It includes a custom function for fetching live tournament data and pre-built templates for running your own bracket pools.
+
+## Google Sheets Templates
+
+I maintain Google Sheets Templates for managing Individual Brackets or a Group of Brackets as a Bracket Manager. The below links will create your own private copy of the files. **The most up-to-date version of both templates is currently Version 10.**
+
+**Note on Copying:** When you click the links below, Google will show a warning: *"The attached Apps Script file and functionality will also be copied."* **This is completely normal and safe.** It appears because the `TedTournament()` script is pre-installed in the template to support the tournament data functions, and to anonymously track active usage of the template and functions. As detailed in the *Privacy and Usage Tracking* section below, the script only logs a randomly generated ID, the template version, the requested league, and the year. If you'd like to verify this code before copying, you can click "View Apps Script file" right on the copy screen.
+
+**Note on Formulas:** You may also see a yellow bar below the menus that says *"Warning: Some formulas are trying to send and receive data from external parties."* This is a standard Google Sheets security feature that appears whenever a spreadsheet uses `IMPORTRANGE` or `IMPORTDATA` functions to pull in data or communicate with the backend tracking script. You can safely click **Allow access**.
+
+[Single Bracket Template](https://docs.google.com/spreadsheets/d/1izjBEQ_FIU0dJ2Z1exWMY2FwpmDP6AqHYxlldD6xhO4/copy) <--clicking on this link will open a new private copy only you have access to. Once the teams for the Tournament are set, pick your winners, sit back, and enjoy the show! The bracket will automatically update with winners and calculate winning scores. You can also use this template in conjunction with the group template below. See the HELP tabs on each template for how to use them together.
+
+[Group Bracket Template](https://docs.google.com/spreadsheets/d/1UBEQnmpWKKHPXu4Y3xmUAlxWR4Oo9jPAXCfL_e-gMT8/copy) <--clicking on this link will open a new private copy only you have access to. Bracket Pool supports up to 100 brackets!
+
+## TedTournament() Custom Function
 
 TedTournament() is a custom function for Google Sheets which returns data for March Madness (NCAA Division I Basketball Championship) games. Currently, this function supports data for 2026, 2025, 2024, 2023, 2022, 2021, 2020, 2019, 2018, 2017, 2016, 2015, 2014 for men's and women's tournaments.
 
@@ -111,17 +127,6 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 ## License
 [GPL-3.0](https://choosealicense.com/licenses/gpl-3.0/)
 
-## Google Sheets Templates
-
-I maintain Google Sheets Templates for managing Individual Brackets or a Group of Brackets as a Bracket Manager. The below links will create your own private copy of the files. **The most up-to-date version of both templates is currently Version 10.**
-
-**Note on Copying:** When you click the links below, Google will show a warning: *"The attached Apps Script file and functionality will also be copied."* **This is completely normal and safe.** It appears because the `TedTournament()` script is pre-installed in the template to support the tournament data functions, and to anonymously track active usage of the template and functions. As detailed in the *Privacy and Usage Tracking* section above, the script only logs a randomly generated ID, the template version, the requested league, and the year. If you'd like to verify this code before copying, you can click "View Apps Script file" right on the copy screen.
-
-**Note on Formulas:** You may also see a yellow bar below the menus that says *"Warning: Some formulas are trying to send and receive data from external parties."* This is a standard Google Sheets security feature that appears whenever a spreadsheet uses `IMPORTRANGE` or `IMPORTDATA` functions to pull in data or communicate with the backend tracking script. You can safely click **Allow access**.
-
-[Single Bracket Template](https://docs.google.com/spreadsheets/d/1izjBEQ_FIU0dJ2Z1exWMY2FwpmDP6AqHYxlldD6xhO4/copy) <--clicking on this link will open a new private copy only you have access to. Once the teams for the Tournament are set, pick your winners, sit back, and enjoy the show! The bracket will automatically update with winners and calculate winning scores. You can also use this template in conjunction with the group template below. See the HELP tabs on each template for how to use them together.
-
-[Group Bracket Template](https://docs.google.com/spreadsheets/d/1UBEQnmpWKKHPXu4Y3xmUAlxWR4Oo9jPAXCfL_e-gMT8/copy) <--clicking on this link will open a new private copy only you have access to. Bracket Pool supports up to 100 brackets!
 
 ## Support
-If **TedTournament** saved your bracket pool or made your spreadsheet life easier, feel free to [buy me a tournament snack](https://venmo.com/code?user_id=2117148897968128612&created=1772685410) or [buy me a tournament drink](https://www.buymeacoffee.com/tedj)!
+If **TedTournament** saved your bracket pool or made your spreadsheet life easier, feel free to [buy me a tournament snack](https://venmo.com/code?user_id=2117148897968128612&created=1772685410) (last 4 digits of phone number: 0801) or [buy me a tournament drink](https://www.buymeacoffee.com/tedj)!
