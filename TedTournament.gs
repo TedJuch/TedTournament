@@ -1,13 +1,14 @@
 /*====================================================================================================================================*
   TedTournament by Ted Juch and Adam Lusk
  *====================================================================================================================================*
-  Version:      2.7.0
+  Version:      2.7.1
   Project Page: https://github.com/TedJuch/TedTournament
   License:      GNU General Public License, version 3 (GPL-3.0) 
                 http://www.opensource.org/licenses/gpl-3.0.html
   ------------------------------------------------------------------------------------------------------------------------------------
   Change Log:
   
+  2.7.1   Migrated UID generator to custom formula to fix group template tracking permissions ping bug.
   2.7.0   Added support for the 2026 tournaments, dynamic API caching based on season dates to improve performance, and an anonymous usage ping to track active templates.
   2.6.0   Added support for the 2025 tournaments
   2.5.0   Added support for the 2024 tournaments
@@ -115,35 +116,24 @@ function onInstall(e) {
   onOpen(e);
 }
  
-function onOpen(e) {
-  // Zero-Warning UID Generator for Standalone Templates
+/**
+ * Generates a persistent unique ID for Google Sheet template tracking.
+ * @customfunction
+ */
+function getTrackingId() {
   try {
-    var ss = e.source;
-    if (!ss) return; 
+    var props = PropertiesService.getDocumentProperties();
+    var uid = props.getProperty("TedTournament_UID");
     
-    // Do not generate UIDs on the Master Templates
-    var masterIds = [
-      "1izjBEQ_FIU0dJ2Z1exWMY2FwpmDP6AqHYxlldD6xhO4", // Single Bracket Master
-      "1UBEQnmpWKKHPXu4Y3xmUAlxWR4Oo9jPAXCfL_e-gMT8"  // Group Bracket Master
-    ];
-    if (masterIds.indexOf(ss.getId()) !== -1) {
-      return; 
+    // Generate a permanent, random anonymous ID for this spreadsheet if it doesn't have one
+    if (!uid) {
+      uid = "sheet_" + Math.random().toString(36).substring(2, 12);
+      props.setProperty("TedTournament_UID", uid);
     }
     
-    var trackingSheet = ss.getSheetByName("Tracking [HIDDEN]");
-    
-    // Attempt to write the ID if the Tracking tab exists
-    if (trackingSheet) {
-      var uidCell = trackingSheet.getRange("A2"); 
-      
-      // Only generate and write an ID if the cell is currently empty
-      if (!uidCell.getValue()) {
-        var randomId = "sheet_" + Math.random().toString(36).substring(2, 12);
-        uidCell.setValue(randomId);
-      }
-    }
+    return uid;
   } catch (err) {
-    // Fail silently
+    return "sheet_error_" + Math.random().toString(36).substring(2, 6);
   }
 }
 
@@ -186,7 +176,7 @@ function trackUsage(league, year) {
     var payload = {
       "entry.2037412024": "Formula",
       "entry.1548934140": uid,
-      "entry.368804083": "2.7.0",
+      "entry.368804083": "2.7.1",
       "entry.977408474": league || "Unknown",
       "entry.1183376038": year || "Unknown"
     };

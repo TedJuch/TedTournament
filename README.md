@@ -103,12 +103,12 @@ In any tab in your own spreadsheet use the following:
 
 ## Privacy and Usage Tracking
 
-In version 2.7.0, an anonymous usage tracking feature was introduced to tally how many unique spreadsheets are actively using the custom function and the templates during each tournament season.
+In version 2.7.1, an anonymous usage tracking feature was introduced to tally how many unique spreadsheets are actively using the custom function and the templates during each tournament season.
 
 **Function Usage Tracking:**
 When you use the `=TedTournament()` formula, the script implicitly pings an anonymous usage log with:
 * A randomly generated ID (e.g., `sheet_abc123`)
-* The script version (e.g., `2.7.0`)
+* The script version (e.g., `2.7.1`)
 * The requested league
 * The requested year
 
@@ -126,7 +126,6 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 
 ## License
 [GPL-3.0](https://choosealicense.com/licenses/gpl-3.0/)
-
 
 ## Support
 If **TedTournament** saved your bracket pool or made your spreadsheet life easier, feel free to [buy me a tournament snack](https://venmo.com/code?user_id=2117148897968128612&created=1772685410) (last 4 digits of phone number: 0801) or [buy me a tournament drink](https://www.buymeacoffee.com/tedj)!
